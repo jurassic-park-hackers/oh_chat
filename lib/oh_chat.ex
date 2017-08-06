@@ -14,6 +14,7 @@ defmodule OhChat do
       supervisor(OhChat.Endpoint, []),
       # Start your own worker by calling: OhChat.Worker.start_link(arg1, arg2, arg3)
       # worker(OhChat.Worker, [arg1, arg2, arg3]),
+      supervisor(OhChat.Presence, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
