@@ -2,7 +2,7 @@ defmodule OhChat.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", OhChat.RoomChannel
+  channel "room", OhChat.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
