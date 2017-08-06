@@ -56,7 +56,6 @@ socket.connect()
 // Now that you are connected, you can join channels with a topic:
 let channel = socket.channel("room", {})
 let message = document.getElementById("message-input")
-let nickName = "Name"
 let chatMessages = document.getElementById("chat-messages")
 
 if (message) {
@@ -64,10 +63,7 @@ if (message) {
 
   message.addEventListener("keypress", event => {
     if (event.keyCode == 13) {
-      channel.push("message:new", {
-        message: message.value,
-        user: nickName
-      })
+      channel.push("message:new", { message: message.value })
       message.value = ''
     }
   })
