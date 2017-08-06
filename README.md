@@ -9,6 +9,13 @@ To start your Phoenix app:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
+
+Some useful commands:
+
+  * Build front-end with `node node_modules/brunch/bin/brunch build`
+  * Run your app inside IEx with `iex -S mix phoenix.server`
+
+
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
 ## Learn more
